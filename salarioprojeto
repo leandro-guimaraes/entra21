@@ -1,0 +1,64 @@
+using System;
+
+namespace SalarioAppConsole
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			
+			float salarioMensal;
+			Console.WriteLine("Digite seu Salario: ");
+			salarioMensal = Int32.Parse (Console.ReadLine());
+
+			if (salarioMensal <= 1200)
+			{
+				salarioMensal = 20 * salarioMensal / 100;
+				Console.WriteLine("Valor do salário com reajuste de 20% : R$" + salarioMensal);
+				Console.WriteLine(" Valor salário convertido em Dólar: $" + salarioMensal / 4, 70);
+				Console.WriteLine(" Valor salário convertido em Euro: EURO $" + salarioMensal / 5, 20);
+			}
+
+			else {
+			}
+				if (salarioMensal == 2000)
+				{
+					salarioMensal = 13 * salarioMensal / 100;
+					Console.WriteLine("Valor do salário com reajuste de 13% : R$" + salarioMensal);
+					Console.WriteLine(" Valor salário convertido em Dólares: $" + salarioMensal / 4, 70);
+					Console.WriteLine(" Valor salário convertido em Euros: EUR$" + salarioMensal / 5, 20);
+				}
+
+				else {
+				
+			}
+
+				if (salarioMensal == 2500)
+				{
+					salarioMensal = 10 * salarioMensal / 100;
+					Console.WriteLine("Valor do salário com reajuste de 10% : R$" + salarioMensal);
+					Console.WriteLine(" Valor salário convertido em Dólares: $" + salarioMensal / 4, 70);
+					Console.WriteLine(" Valor salário convertido em Euros: EUR$" + salarioMensal / 5, 20);
+				}
+
+				else {
+				
+			}
+
+				if (salarioMensal > 2500)
+				{
+					salarioMensal = 5 * salarioMensal / 100;
+					Console.WriteLine("Valor do salário com reajuste de 5% : R$" + salarioMensal);
+					Console.WriteLine(" Valor salário convertido em Dólares: $" + salarioMensal / 4, 70);
+					Console.WriteLine(" Valor salário convertido em Euros: EUR$" + salarioMensal / 5, 20);
+				}
+
+
+				else {
+				Console.WriteLine(" Valor salário convertido em Dólares: $" + salarioMensal / 4, 70);
+				Console.WriteLine(" Valor salário convertido em Euros: EUR$" + salarioMensal / 5, 20);
+			}
+			
+		}
+	}
+}
